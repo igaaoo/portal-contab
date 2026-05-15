@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --accent: #0F766E;
+  --accent-strong: #0B5E58;
+  --accent-soft: #CCFBF1;
+  --bg: #FAF9F6;
+  --bg-elev: #FFFFFF;
+  --bg-sunken: #F4F2EC;
+  --bg-hover: #EFEDE6;
+  --line: #E6E2D7;
+  --line-strong: #D8D3C4;
+  --text: #1B1A17;
+  --text-muted: #5C5A52;
+  --text-faint: #8A877C;
+  --green: #156F3F;
+  --green-bg: #E3F2E7;
+  --amber: #A35D00;
+  --amber-bg: #FAEDD2;
+  --red: #B42318;
+  --red-bg: #FCE9E6;
+  --blue: #1849A9;
+  --blue-bg: #E1ECFF;
+  --violet: #5D2D9A;
+  --violet-bg: #EDE3FA;
+}
+
+.dark {
+  --accent: #14B8A6;
+  --accent-strong: #0F766E;
+  --accent-soft: #134e4a;
+  --bg: #0F1311;
+  --bg-elev: #161B19;
+  --bg-sunken: #0A0E0C;
+  --bg-hover: #1E2421;
+  --line: #262D29;
+  --line-strong: #323A35;
+  --text: #ECEAE0;
+  --text-muted: #9B978A;
+  --text-faint: #6B6A60;
+  --green: #54B97A;
+  --green-bg: #16341F;
+  --amber: #D89A4A;
+  --amber-bg: #3B2A0F;
+  --red: #E26A5E;
+  --red-bg: #3A1814;
+  --blue: #6FA2FF;
+  --blue-bg: #131F38;
+  --violet: #B89AFF;
+  --violet-bg: #221A36;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-faint);
+}
+
+.font-mono {
+  font-family: var(--font-mono), 'JetBrains Mono', 'Fira Code', monospace;
+}
